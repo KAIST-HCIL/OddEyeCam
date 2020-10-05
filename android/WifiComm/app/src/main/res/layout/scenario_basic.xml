@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:id="@+id/background"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center"
+        android:layout_width="9000px"
+        android:layout_height="9000px"
+        android:orientation="vertical"
+        tools:context="com.daehwa.wificomm.Scenario"
+        android:keepScreenOn="true"
+        android:background="@color/colorDarkNothing">
+    <Button android:id="@+id/buffer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@null"
+            android:background="@android:color/transparent"/>
+    <Button
+            android:layout_width="100px"
+            android:layout_height="1920px"
+            android:layout_marginTop="3540px"
+            android:layout_marginLeft="4940px"
+            android:stateListAnimator="@null"
+            android:background="@android:color/transparent"/>
+    <LinearLayout android:id="@+id/fragment"
+                  android:layout_marginTop="3540px"
+                  android:layout_marginLeft="3960px"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/fragment1"
+                android:layout_width="1080px"
+                android:layout_height="1920px"
+                android:orientation="vertical"
+                android:layout_margin = "10dp"/>
+        <LinearLayout
+                android:id="@+id/fragment2"
+                android:layout_width="1080px"
+                android:layout_height="1920px"
+                android:orientation="vertical"
+                android:layout_margin = "10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:visibility="gone"
+            android:layout_width="1080px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5300px"
+            android:layout_marginLeft="3960px"
+            android:orientation="vertical">
+        <Button android:id="@+id/fix_btn"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorYellow"
+                android:text="중앙을 여기로"/>
+    </LinearLayout>
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/reticle"
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:layout_marginTop="1920px"
+            android:layout_marginLeft="1080px"
+            android:orientation="vertical">
+        <TextView
+                android:gravity="center"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:textColor="@color/colorAccent" android:textSize="50sp"
+                android:text="+"/>
+    </FrameLayout>
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/mask"
+            android:layout_width="1080px" android:layout_height="1920px"
+            android:orientation="vertical"
+            android:layout_marginTop="3540px" android:layout_marginLeft="3960px">
+        <LinearLayout android:layout_width="1080px" android:layout_height="420px"
+                      android:orientation="vertical"
+                      android:background="@android:color/black">
+            <LinearLayout android:id="@+id/record"
+                          android:layout_width="10dp" android:layout_height="10dp"
+                          android:orientation="vertical"
+                          android:background="@drawable/circle_shape_blue"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginTop="10dp"/>
+            <TextView
+                    android:visibility="gone"
+                    android:id="@+id/remain_task"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" android:textSize="20sp"
+                    android:text="남은 과업:"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="1080px" android:layout_height="420px"
+                      android:layout_marginTop="1080px"
+                      android:background="@android:color/black"/>
+    </LinearLayout>
+    <LinearLayout
+            android:visibility="gone"
+            android:layout_width="1080px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5300px"
+            android:layout_marginLeft="3960px"
+            android:orientation="vertical">
+        <Button android:id="@+id/next_round"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Next Round"/>
+    </LinearLayout>
+    <LinearLayout
+            android:visibility="gone"
+            android:layout_width="1080px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5100px"
+            android:layout_marginLeft="3960px"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30px">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fcmin"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorAccent"/>
+            <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/fcmin"
+                    android:layout_width="800px"
+                    android:layout_height="90px"
+                    android:progress="100"/>
+            <TextView
+                    android:id="@+id/fcmin_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30px">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="beta    "
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorAccent"/>
+            <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/beta"
+                    android:layout_width="800px"
+                    android:layout_height="90px"
+                    android:progress="0"/>
+            <TextView
+                    android:id="@+id/beta_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText
+                    android:id="@+id/fcmin_max"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"
+                    android:textColor="@color/colorAccent" android:textColorHint="@color/colorAccent" android:textSize="15sp"
+                    android:hint="fcmin max" android:inputType="numberDecimal"/>
+            <TextView
+                    android:id="@+id/fcmin_max_value"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"
+                    android:textColor="@color/colorAccent" android:textSize="15sp"
+                    android:text="0.5"/>
+            <Button
+                    android:id="@+id/fcmin_max_btn"
+                    android:layout_width="80px" android:layout_height="80px"
+                    android:textSize="10sp" android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText
+                    android:id="@+id/beta_max"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"
+                    android:textColor="@color/colorAccent" android:textColorHint="@color/colorAccent" android:textSize="15sp"
+                    android:hint="beta max" android:inputType="numberDecimal"/>
+            <TextView
+                    android:id="@+id/beta_max_value"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"
+                    android:textColor="@color/colorAccent" android:textSize="15sp"
+                    android:text="0.001"/>
+            <Button
+                    android:id="@+id/beta_max_btn"
+                    android:layout_width="80px" android:layout_height="80px"
+                    android:textSize="10sp" android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

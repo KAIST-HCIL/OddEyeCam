@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="1080px"
+              android:layout_height="1920px"
+              android:background="@color/colorPrimary"
+              android:gravity="center">
+    <LinearLayout
+            android:id="@+id/folder_background"
+            android:orientation="horizontal"
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+        <!-- Previous Folder -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:orientation="horizontal" android:gravity="left">
+            <LinearLayout android:id="@+id/previous_folder" android:layout_width="30px" android:layout_height="900px"
+                          android:layout_gravity="center_vertical" android:orientation="horizontal"
+                          android:background="@android:color/white" android:elevation="1dp"/>
+        </LinearLayout>
+
+        <!-- Current Folder -->
+        <LinearLayout
+                android:layout_width="850px"
+                android:layout_height="1200px"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@android:color/white">
+            <TextView
+                    android:id="@+id/folder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Folder"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/black"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="1px"
+                          android:background="@color/colorDarkNothing"
+                          android:layout_marginTop="10dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:gravity="center" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center">
+                    <LinearLayout android:id="@+id/app1"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app1_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/photo_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app1_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Photo" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app2"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app2_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/map_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app2_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Map" android:textColor="@android:color/black" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app3"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app3_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/memo_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app3_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Memo" android:textColor="@android:color/black" android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center">
+                    <LinearLayout android:id="@+id/app4"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app4_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/message_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app4_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Chat" android:textColor="@android:color/black" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app5"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app5_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/camera_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app5_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Camera" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app6"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app6_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/video_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app6_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Video" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center">
+                    <LinearLayout android:id="@+id/app7"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app7_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/timer_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app7_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Timer" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app8"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app8_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/music_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app8_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Music" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/app9"
+                                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_gravity="center" android:gravity="center"
+                                  android:orientation="vertical"
+                                  android:layout_margin="10dp">
+                        <ImageView android:id="@+id/app9_icon" android:layout_width="150px"
+                                   android:layout_height="150px"
+                                   android:src="@drawable/contact_icon" android:layout_marginBottom="5dp"/>
+                        <TextView android:id="@+id/app9_name"
+                                  android:layout_width="150px" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="Contact" android:textColor="@android:color/black"
+                                  android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Next Folder -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:orientation="horizontal" android:gravity="right">
+            <LinearLayout android:id="@+id/next_folder" android:layout_width="30px" android:layout_height="900px"
+                          android:background="@android:color/white" android:elevation="1dp"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

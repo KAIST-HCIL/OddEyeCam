@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="900px"
+              android:layout_height="1600px">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="900px"
+                  android:layout_height="1600px">
+        <LinearLayout android:layout_width="900px" android:layout_height="180px"
+                      android:background="@color/colorPrimary"
+                      android:gravity="center">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textSize="30sp" android:layout_margin="5dp" android:text="Messenger"
+                      android:gravity="center" android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/message_scroll" android:layout_width="900px" android:layout_height="1420px"
+                    android:background="@android:color/white">
+            <LinearLayout
+                    android:id="@+id/message_board"
+                    android:layout_width="900px" android:layout_height="1600px" android:orientation="vertical"
+                    android:gravity="right">
+                <LinearLayout android:layout_width="400px" android:layout_height="wrap_content"
+                              android:background="#E9E9E9" android:layout_margin="5dp"
+                              android:layout_gravity="left">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="안녕하세요~"
+                              android:padding="10dp"
+                              android:gravity="left" android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="550px" android:layout_height="wrap_content"
+                              android:background="#E9E9E9" android:layout_margin="5dp"
+                              android:layout_gravity="left">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="저 김쿼카 입니다. :-D"
+                              android:padding="10dp"
+                              android:gravity="left" android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="800px" android:layout_height="wrap_content"
+                              android:background="#E9E9E9" android:layout_margin="5dp"
+                              android:layout_gravity="left">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="지난 번에 부탁드렸던 사진을 받으려고 연락드렸는데요,"
+                              android:padding="10dp"
+                              android:gravity="left" android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="700px" android:layout_height="wrap_content"
+                              android:background="@color/colorPrimary" android:layout_margin="5dp"
+                              android:layout_gravity="right">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="안녕하세요! 죄송해요. 완전히 잊어버리고 있었네요"
+                              android:padding="10dp"
+                              android:gravity="right" android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="850px" android:layout_height="wrap_content"
+                              android:background="@color/colorPrimary" android:layout_margin="5dp"
+                              android:layout_gravity="right">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="어떤 사진인지 기억이 잘 안나네요, 혹시 다시 알려주실 수 있으신가요?"
+                              android:padding="10dp"
+                              android:gravity="right" android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="500px" android:layout_height="wrap_content"
+                              android:background="#E9E9E9" android:layout_margin="5dp"
+                              android:layout_gravity="left">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="괜찮습니다 ㅎㅎ"
+                              android:padding="10dp"
+                              android:gravity="left" android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="800px" android:layout_height="wrap_content"
+                              android:background="#E9E9E9" android:layout_margin="5dp"
+                              android:layout_gravity="left">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="18sp" android:text="제가 부탁드린 사진은 1. 에펠탑, 2. 침대위의 고양이, 3. 새, 4. 피자, 5. 레고, 6. 아이언맨 였습니다."
+                              android:padding="10dp"
+                              android:gravity="left" android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!--<EditText android:layout_width="match_parent" android:layout_height="160px"
+                  android:layout_gravity="bottom" android:background="#E9E9E9"
+                  android:textSize="20sp" android:padding="15dp" android:hint="Aa"
+                  android:windowSoftInputMode="stateHidden"/>-->
+    </LinearLayout>
+</LinearLayout>

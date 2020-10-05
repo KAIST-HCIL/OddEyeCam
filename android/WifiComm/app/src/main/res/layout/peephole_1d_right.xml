@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="1080px"
+              android:layout_height="1920px">
+    <LinearLayout
+            android:id="@+id/peephole_back_right"
+            android:orientation="horizontal"
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:gravity="center">
+        <Button
+                android:id="@+id/peephole_left_margin_right"
+                android:layout_width="490px"
+                android:layout_height="1920px"
+                android:background="@android:color/transparent">
+        </Button>
+        <Button
+                android:id="@+id/peephole_target_right"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"/>
+        <Button
+                android:id="@+id/peephole_right_margin_right"
+                android:layout_width="490px"
+                android:layout_height="1920px"
+                android:background="@android:color/transparent">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="1080px"
+              android:layout_height="1920px"
+              android:background="@android:color/white">
+    <LinearLayout android:layout_width="1080px" android:layout_height="180px"
+                  android:background="@color/colorPrimary"
+                  android:gravity="center">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textSize="30sp" android:layout_margin="5dp" android:text="Messenger"
+                  android:gravity="center" android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/message_scroll" android:layout_width="1080px" android:layout_height="1580px"
+                android:background="@android:color/white">
+        <LinearLayout
+                android:id="@+id/message_board"
+                android:layout_width="1080px" android:layout_height="1580px" android:orientation="vertical"
+                android:gravity="right">
+            <LinearLayout android:layout_width="400px" android:layout_height="wrap_content"
+                          android:background="#E9E9E9" android:layout_margin="5dp"
+                          android:layout_gravity="left">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="Hello Mary"
+                          android:padding="10dp"
+                          android:gravity="left" android:textColor="@android:color/black"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="550px" android:layout_height="wrap_content"
+                          android:background="#E9E9E9" android:layout_margin="5dp"
+                          android:layout_gravity="left">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="This is Martin :-D"
+                          android:padding="10dp"
+                          android:gravity="left" android:textColor="@android:color/black"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="850px" android:layout_height="wrap_content"
+                          android:background="#E9E9E9" android:layout_margin="5dp"
+                          android:layout_gravity="left">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="I texted you to get the photo I asked last time."
+                          android:padding="10dp"
+                          android:gravity="left" android:textColor="@android:color/black"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="700px" android:layout_height="wrap_content"
+                          android:background="@color/colorPrimary" android:layout_margin="5dp"
+                          android:layout_gravity="right">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="Hi! I'm sorry. I totally forgot about it."
+                          android:padding="10dp"
+                          android:gravity="right" android:textColor="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="900px" android:layout_height="wrap_content"
+                          android:background="@color/colorPrimary" android:layout_margin="5dp"
+                          android:layout_gravity="right">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="Btw I can't remember what the photos are, can you please tell me again?"
+                          android:padding="10dp"
+                          android:gravity="right" android:textColor="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="200px" android:layout_height="wrap_content"
+                          android:background="#E9E9E9" android:layout_margin="5dp"
+                          android:layout_gravity="left">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="Sure"
+                          android:padding="10dp"
+                          android:gravity="left" android:textColor="@android:color/black"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="800px" android:layout_height="wrap_content"
+                          android:background="#E9E9E9" android:layout_margin="5dp"
+                          android:layout_gravity="left">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="20sp" android:text="The photos I asked for were 1. Eiffel Tower, 2. Cat on the bed, 3. Bird, 4. Pizza, 5. Lego, and 6. Iron Man."
+                          android:padding="10dp"
+                          android:gravity="left" android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <EditText android:layout_width="match_parent" android:layout_height="160px"
+              android:layout_gravity="bottom" android:background="#E9E9E9"
+              android:textSize="20sp" android:padding="15dp" android:hint="Aa"
+              android:windowSoftInputMode="stateHidden"/>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white">
+    <LinearLayout android:layout_width="1080px" android:layout_height="180px"
+                  android:elevation="2dp" android:background="@color/colorPrimary"
+                  android:gravity="center">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textSize="30sp" android:layout_margin="5dp" android:text="Photo"
+                  android:gravity="center" android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample1" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample1" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample2" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample2" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample3" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample3" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample4" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample4" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample5" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample5" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample6" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample6" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample7" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample7" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample8" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample8" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample9" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample9" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample10" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample10" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample11" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample11" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample12" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample12" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample13" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample13" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample14" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample14" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample15" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample15" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample16" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample16" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample17" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample17" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample18" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample18" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:id="@+id/sample19" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample19" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample20" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample20" android:scaleType="centerCrop" android:layout_margin="30px"/>
+                <ImageView android:id="@+id/sample21" android:layout_width="300px" android:layout_height="300px"
+                           android:src="@drawable/sample21" android:scaleType="centerCrop" android:layout_margin="30px"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:layout_marginBottom="150dp">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

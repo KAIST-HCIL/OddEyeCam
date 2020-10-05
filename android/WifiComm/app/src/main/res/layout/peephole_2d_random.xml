@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="3000px"
+              android:layout_height="3000px">
+    <FrameLayout android:orientation="vertical"
+                 android:layout_width="3000px"
+                 android:layout_height="3000px">
+        <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/hint_path"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="3000px"
+                android:layout_height="3000px"
+                android:background="@drawable/line">
+            <LinearLayout
+                    android:layout_width="25px" android:layout_height="25px"
+                    android:background="@drawable/circle_shape"/>
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/target_known"
+            android:layout_width="200px" android:layout_height="200px"
+            android:layout_marginTop="1000px" android:layout_marginLeft="1000px"
+            android:background = "@color/colorPrimary"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/target_unknown"
+            android:layout_width="200px" android:layout_height="200px"
+            android:background = "@android:color/darker_gray"/>
+    </FrameLayout>
+</FrameLayout>

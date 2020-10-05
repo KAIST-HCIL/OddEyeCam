@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HandTop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ip">IP</string>
+    <string name="port">PORT</string>
+    <string name="name">NAME</string>
+    <string name="button1">Connect!</string>
+    <string name="button2">Disconnect!</string>
+    <string name="button3">Set Server!</string>
+    <string name="button4">close Server!</string>
+    <string name="button5">View info!</string>
+    <string name="button6">Msg</string>
+    <string name="button7">Scenario</string>
+    <string name="myIP">192.168.0.18</string>
+    <string name="myPort">5000</string>
+    <string name="scenario1">Drag and Drop between Apps</string>
+    <string name="scenario2">Application Stack</string>
+    <string name="scenario3">Large Image Viewer</string>
+    <string name="scenario4">One-hand Bookmarking</string>
+    <string name="scenario5">Map</string>
+    <string name="scenario6">Virtual Shelves</string>
+    <string name="screen_width">1080px</string>
+    <string name="screen_height">1920px</string>
+    <string name="canvas_width">3240px</string>
+    <string name="canvas_height">5760px</string>
+</resources>

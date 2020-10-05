@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="1080px"
+              android:layout_height="1920px"
+              android:gravity="center">
+    <FrameLayout android:layout_width="1080px" android:layout_height="1920px">
+        <LinearLayout
+                android:id="@+id/target1"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target2"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target3"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target4"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target5"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target6"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target7"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target8"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+        <LinearLayout
+                android:id="@+id/target9"
+                android:orientation="vertical"
+                android:layout_width="200px" android:layout_height="200px"
+                android:background="@android:color/darker_gray"/>
+    </FrameLayout>
+
+</LinearLayout>

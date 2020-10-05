@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/noti_segment"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent">
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginLeft="3dp" android:layout_marginRight="3dp"
+            android:background="@android:color/white">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3"
+                          android:orientation="vertical"
+                          android:layout_margin="15dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_margin="1dp" >
+                    <TextView android:id="@+id/noti_app_name"
+                              android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="13sp" android:textColor="@color/colorAccent" android:layout_marginRight="15dp"
+                              android:text="Gmail" />
+                    <TextView android:id="@+id/noti_app_info"
+                              android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="13sp" android:textColor="#3e3e3e" android:layout_marginRight="30dp"
+                              android:text="daehwakim@kaist.ac.kr" />
+                </LinearLayout>
+                <TextView android:id="@+id/noti_content"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="15sp" android:textColor="@android:color/black" android:layout_margin="1dp"
+                          android:text="Apple에서 발행한 영수증입니다." />
+            </LinearLayout>
+            <ImageView android:id="@+id/noti_content_fig"
+                       android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="2"
+                       android:scaleType="centerCrop" android:visibility="gone"
+                       android:src="@drawable/parasite"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="1px"
+                      android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+</LinearLayout>

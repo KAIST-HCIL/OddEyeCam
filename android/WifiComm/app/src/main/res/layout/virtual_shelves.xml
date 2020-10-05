@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/virtual_shelves"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/marking_menu"
+                  android:layout_width="1080px" android:layout_height="1920px" android:orientation="vertical"
+                  android:background="@color/colorDarkNothing" android:gravity="center_vertical">
+
+        <!-- upper part -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/upper_app_icon"
+                       android:layout_width="70dp" android:layout_height="70dp"  android:padding="10dp"
+                       android:src="@drawable/map_icon"/>
+            <TextView android:id="@+id/upper_app_text"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@android:color/white" android:textSize="15sp"
+                      android:text="Map"/>
+        </LinearLayout>
+
+        <!-- center part -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+            <!-- left side -->
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:gravity="center" android:orientation="vertical">
+                <ImageView android:id="@+id/left_app_icon"
+                           android:layout_width="70dp" android:layout_height="70dp"  android:padding="10dp"
+                           android:src="@drawable/calendar_icon"/>
+                <TextView android:id="@+id/left_app_text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@android:color/white" android:textSize="15sp"
+                          android:text="Calendar"/>
+            </LinearLayout>
+            <!-- center -->
+            <LinearLayout android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="20dp"
+                          android:gravity="center" android:orientation="vertical"
+                          android:background="@drawable/circle">
+                <ImageView android:id="@+id/center_app_icon" android:padding="10dp"
+                           android:layout_width="70dp" android:layout_height="70dp" android:visibility="gone"
+                           android:src="@drawable/call_icon"/>
+                <TextView android:id="@+id/center_app_text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@android:color/white" android:textSize="20sp" android:gravity="center"
+                          android:text="Menu"/>
+
+            </LinearLayout>
+            <!-- right side -->
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center" android:orientation="vertical">
+                <ImageView android:id="@+id/right_app_icon" android:padding="10dp"
+                           android:layout_width="70dp" android:layout_height="70dp"
+                           android:src="@drawable/call_icon"/>
+                <TextView android:id="@+id/right_app_text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@android:color/white" android:textSize="15sp"
+                          android:text="Call"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- lower part -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/lower_app_icon"
+                       android:layout_width="70dp" android:layout_height="70dp"  android:padding="10dp"
+                       android:src="@drawable/music_icon"/>
+            <TextView android:id="@+id/lower_app_text"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="@android:color/white" android:textSize="15sp"
+                      android:text="Music"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="1080px" android:layout_height="1920px" android:orientation="vertical"
+                  android:background="@color/colorDarkNothing" android:gravity="center">
+        <ImageView android:id="@+id/running_app_icon"
+                   android:layout_width="150dp" android:layout_height="150dp"
+                   android:background="@drawable/call_icon"/>
+        <TextView android:id="@+id/running_app_text"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="30sp" android:textColor="@android:color/white"
+                  android:layout_marginTop="10dp" android:layout_marginBottom="50dp"
+                  android:text="Calling Mom .."/>
+    </LinearLayout>
+</LinearLayout>

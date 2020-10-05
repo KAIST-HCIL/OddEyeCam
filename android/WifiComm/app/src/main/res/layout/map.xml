@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+                  android:layout_width="1080px" android:layout_height="1920px"
+                  android:orientation="vertical" android:background="@color/colorDarkNothing">
+
+        <Button android:id="@+id/walking_mode"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:backgroundTint="@color/colorPrimary" android:textColor="@android:color/white"
+                android:text="STILL"/>
+
+        <LinearLayout android:id="@+id/map"
+                      android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <LinearLayout android:id="@+id/arrow"
+                          android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:visibility="gone">
+                <ImageView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:src="@drawable/arrow"/>
+            </LinearLayout>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textSize="20sp" android:padding="10dp"
+                      android:background="@android:color/white" android:textColor="@color/colorDarkNothing"
+                      android:hint="Search Google Maps"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="1px"
+                          android:background="@color/colorDarkNothing"/>
+            <ImageView android:id="@+id/map_content"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/map_overall"/>
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/bus"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center"
+                       android:visibility="gone">
+            <ImageView android:layout_width="120dp" android:layout_height="120dp"
+                        android:src="@drawable/bus"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp" android:textColor="@android:color/white"
+                    android:text="Next bus departure"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:textSize="40sp" android:textColor="@color/colorAccent"
+                      android:text="5 min left"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/restaurant"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:visibility="gone">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textSize="20sp" android:padding="10dp"
+                      android:background="@android:color/white" android:textColor="@color/colorDarkNothing"
+                      android:hint="Restaurants"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="1px"
+                          android:background="@color/colorDarkNothing"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/near_restaurant"/>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/hotel"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:visibility="gone">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textSize="20sp" android:padding="10dp"
+                      android:background="@android:color/white" android:textColor="@color/colorDarkNothing"
+                      android:hint="Hotels"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="1px"
+                          android:background="@color/colorDarkNothing"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/nearby_hotel"/>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/destination"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:orientation="vertical" android:gravity="center"
+                       android:visibility="gone">
+            <ImageView android:layout_width="200dp" android:layout_height="120dp"
+                       android:src="@drawable/crosswalk"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:textSize="30sp" android:textColor="@android:color/white"
+                      android:text="Next destination"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:textSize="30sp" android:textColor="@color/colorPrimary"
+                      android:text="Cross the pedestrian crossing"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
