@@ -1,7 +1,7 @@
 from util.fisheyecam_streaming import FisheyeCam
 from util.realsense_streaming import DepthCam
 from util.visualize3d import visualize_3d
-from core.egocoord import EgoCoord
+from core.oddeyecam import OddEyeCam
 import core.network.server as server
 import threading
 import cv2
@@ -14,7 +14,7 @@ from core.math_tool.coordinate_system import CoordSys
 # -- Open Camera --
 cam = FisheyeCam()
 depth_cam = DepthCam()
-ec = EgoCoord()
+ec = OddEyeCam()
 
 # -- Open Server --
 t = threading.Thread(target=server.open_server)
@@ -36,7 +36,7 @@ def show_webcam():
         grav = server.get_grav()
         if np.all(grav == np.array([0,0,0])):
             continue
-        ec.run_egocoord(fisheye_img, color_img, verts, grav)
+        ec.run_oddeyecam(fisheye_img, color_img, verts, grav)
         ref = ec.get_view_from_chest_of('chest')
         pred = ec.get_view_from_chest_of('phone')
         server.mysend(pred.to_string())

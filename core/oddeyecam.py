@@ -17,7 +17,7 @@ pe = PoseEstimator()
 warper = Warper()
 remapper = Remapper()
 
-class EgoCoord():
+class OddEyeCam():
     def __init__(self):
         """
         These objects are view from global frame,
@@ -28,7 +28,7 @@ class EgoCoord():
         self.chest = CoordSys(ref_coordsys = self.camera)
         self.remapper = remapper
         
-    def run_egocoord(self,fisheye_img, rs_img, verts, grav):
+    def run_oddeyecam(self,fisheye_img, rs_img, verts, grav):
         self.fisheye_img = fisheye_img
         self.rs_img = rs_img
         self.verts = verts
