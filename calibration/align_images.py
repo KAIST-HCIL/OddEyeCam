@@ -10,8 +10,8 @@ from math import sqrt
 ###################################
 
 ## [load]
-nfov_img_file = "./checkerboard_img/d415_RGB.jpg"
-wfov_img_file = "./checkerboard_img/perspective.jpg"
+nfov_img_file = "./40cm_checkerboard/d415_RGB.jpg"
+wfov_img_file = "./40cm_checkerboard/perspective.jpg"
 img1 = cv2.imread(wfov_img_file) # source
 img2 = cv2.imread(nfov_img_file) # destination
 if img1 is None or img2 is None:

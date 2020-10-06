@@ -15,16 +15,16 @@ More info about this work can be found in:
 
 ## How to use
 
-#### Step 0: Camera Calibration
+### Step 0: Camera Calibration
 OddEyeCam combines WFoV RGB camera and NFoV depth camera. For this fusion process, we need to calibrate the cameras. For more details, please check the [calibration](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/calibration) folder.
 
-#### Step 1: Install Requirements
+### Step 1: Install Requirements
 - __Pose Estimation Module (OpenPose)__  
 We used [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md) for body tracking. Please compile [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md) and place model, library files in [core/thirdparty/openpose/](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/core/thirdparty) folder. If you are using Python3.6 on Windows, we provide these files to save your time. Please download them [here](https://drive.google.com/file/d/1W9XcH5y6mbULcdHEjV5QRXZ0w__A08F7/view?usp=sharing).
 - __Android App__  
 Our system needs an Android device because OddEyeCam 1) receives accelerometer data from the device and 2) visualizes the result on the app. Please download OddEyeCam [Android application package (APK)](https://drive.google.com/file/d/1r3HOWgwSr-nKmP_GT4WFvUjOl7_6V8s4/view?usp=sharing). Or, you can also modify and build this app. For more details, please check the [android](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/android) folder.
 
-#### Step2: Run OddEyeCam on a Desktop
+### Step2: Run OddEyeCam on a Desktop
 ```bash
 python oddeyecam_demo.py
 ```
@@ -35,7 +35,7 @@ After you run ```oddeyecam_demo.py```, you will see the line "[Server] Server is
     <sup>After you run oddeyecam_demo.py. System is waiting for the connection of an Android device.</sup>
 </p>
 
-#### Step3: Connect with Android Device
+### Step3: Connect with Android Device
 
 Please press the
 <img src="./images/connect_btn.jpg" height="28" style="display: inline-block;"/> button
@@ -50,7 +50,7 @@ on the OddEyeCam Android app. After the connection, you will see <img src="image
 
 If you want to stop camera streaming, then press the ```esc``` button on the camera windows.
 
-#### Step4: Demo Applications
+### Step4: Demo Applications
 If you want to use example application, please press
 <img src="./images/scenario_btn.jpg" height="28" style="display: inline-block;"/> button. Then you will see six applications:
 - Drag and Drop between Apps
