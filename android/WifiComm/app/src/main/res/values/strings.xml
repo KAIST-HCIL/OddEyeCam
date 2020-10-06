@@ -16,11 +16,11 @@
     <string name="myIP">192.168.0.18</string>
     <string name="myPort">5000</string>
     <string name="scenario1">Drag and Drop between Apps</string>
-    <string name="scenario2">Application Stack</string>
+    <string name="scenario2">Body-Centric Folder</string>
     <string name="scenario3">Large Image Viewer</string>
-    <string name="scenario4">One-hand Bookmarking</string>
-    <string name="scenario5">Map</string>
-    <string name="scenario6">Virtual Shelves</string>
+    <string name="scenario4">One-hand Tagging</string>
+    <string name="scenario5">Getting Direction</string>
+    <string name="scenario6">Marking Menus</string>
     <string name="screen_width">1080px</string>
     <string name="screen_height">1920px</string>
     <string name="canvas_width">3240px</string>

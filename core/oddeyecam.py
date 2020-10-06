@@ -150,8 +150,8 @@ class OddEyeCam():
         return points
 
     def _set_chest_center(self):
-        center = (self.get_right_shoulder() + self.get_left_shoulder())/2
-        # center = self.get_neck()
+        # center = (self.get_right_shoulder() + self.get_left_shoulder())/2
+        center = self.get_neck()
         self.chest.set_center(center)
         return center
 

@@ -185,7 +185,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 ip = et1!!.text.toString()
                 port = Integer.parseInt(et2!!.text.toString())
             } catch (e: Exception) {
-                val recvInput = "정확히 입력하세요!"
+                val recvInput = "Please fill the blank"
                 mHandler.post {
                     // TODO Auto-generated method stub
                     setToast(recvInput)
@@ -201,13 +201,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 //                recvSocket().start()
                 mHandler.post {
                     // TODO Auto-generated method stub
-                    setToast("연결에 성공하였습니다.")
+                    setToast("Connected")
                     findViewById<Button>(R.id.button1).visibility = Button.INVISIBLE
                     findViewById<SpinKitView>(R.id.spin_kit).visibility = SpinKitView.VISIBLE
                 }
                 sendMessage().start()
             } catch (e: Exception) {
-                val recvInput = "연결에 실패하였습니다."
+                val recvInput = "Connection Fail"
                 Log.d("Connect", e.message)
                 mHandler.post {
                     // TODO Auto-generated method stub
@@ -227,13 +227,13 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                     socket!!.close()
                     mHandler.post {
                         // TODO Auto-generated method stub
-                        setToast("연결이 종료되었습니다.")
+                        setToast("Disconnected")
                     }
 
                 }
 
             } catch (e: Exception) {
-                val recvInput = "연결에 실패하였습니다."
+                val recvInput = "Connection Fail"
                 Log.d("Connect", e.message)
                 mHandler.post {
                     // TODO Auto-generated method stub
@@ -251,7 +251,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             try {
                 val port = Integer.parseInt(et2!!.text.toString())
                 serverSocket = ServerSocket(port)
-                val result = "서버 포트 $port 가 준비되었습니다."
+                val result = "Server port $port is ready"
 
                 mHandler.post {
                     // TODO Auto-generated method stub
@@ -278,12 +278,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 }
                 mHandler.post {
                     // TODO Auto-generated method stub
-                    setToast("연결이 종료되었습니다.")
+                    setToast("Disconnected")
                 }
                 serverSocket!!.close()
                 socket!!.close()
             } catch (e: Exception) {
-                val recvInput = "서버 준비에 실패하였습니다."
+                val recvInput = "Fail to connect"
                 Log.d("SetServer", e.message)
                 mHandler.post {
                     // TODO Auto-generated method stub
@@ -339,12 +339,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 }
                 mHandler.post {
                     // TODO Auto-generated method stub
-                    setToast("실험이 종료되었습니다.")
+                    setToast("Successfully Ended")
                     findViewById<Button>(R.id.button1).visibility = Button.VISIBLE
                     findViewById<SpinKitView>(R.id.spin_kit).visibility = SpinKitView.INVISIBLE
                 }
             } catch (e: Exception) {
-                val recvInput = "실험이 종료되었습니다."
+                val recvInput = "Successfully Ended"
                 Log.d("SetServer", e.message)
                 mHandler.post {
                     // TODO Auto-generated method stub
@@ -367,7 +367,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
                     mHandler.post {
                         // TODO Auto-generated method stub
-                        setToast("서버가 종료되었습니다..")
+                        setToast("Disconnected")
                     }
                 }
             } catch (e: Exception) {
@@ -397,7 +397,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 //                    recvSocket()
                 }
             } catch (e: Exception) {
-                val recvInput = "실험이 종료되었습니다."
+                val recvInput = "Successfully Ended"
                 Log.d("SetServer", e.message)
                 mHandler.post {
                     // TODO Auto-generated method stub

@@ -33,7 +33,7 @@ def get_grav():
 
 def open_server(port=5000,BUF_SIZE = 1024):
     global c
-    print('[Server]','Server is openned!')
+    print('[Server]','Server is opened!')
     s.bind((host, port))        # Bind to the port
     s.listen(5)                 # Now wait for client connection.
     c, addr = s.accept()     # Establish connection with client.
