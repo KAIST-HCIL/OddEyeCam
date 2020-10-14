@@ -107,6 +107,26 @@ img2 = cv2.imread(filepath)
 cv2.imshow("fisheye (input)", img2)
 cv2.imshow("fisheye2perspective result", undistorted_img)
 cv2.imwrite("output/fisheye2perspective_result.jpg",undistorted_img)
+
+# Save perspective projection map
+np.savetxt("parameters/per_u.csv", u, delimiter=',')
+np.savetxt("parameters/per_v.csv", v, delimiter=',')
+
+# Generate and Save reverse perspective projection map
+u_rev, v_rev = np.zeros(u.shape),np.zeros(v.shape)
+i,j=0,0
+for u_row,v_row in zip(u.astype(np.int), v.astype(np.int)):
+    j = 0
+    for u_,v_ in zip(u_row,v_row):
+        if(v_>=u.shape[0] or u_>=u.shape[1]):
+            continue
+        u_rev[v_,u_] = j
+        v_rev[v_,u_] = i
+        j = j+1
+    i = i+1
+np.savetxt("./parameters/per_u_rev.csv",u_rev,delimiter=',')
+np.savetxt("./parameters/per_v_rev.csv",v_rev,delimiter=',')
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ## [Apply Perspective Projection]
