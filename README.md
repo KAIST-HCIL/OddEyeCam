@@ -6,7 +6,7 @@
 
 OddEyeCam is a practical inside-out mobile device tracking system to support body-centric peephole interaction. OddEyeCam tracks a user's body using a WFoV RGB camera and obtains precise depth information using an NFoV depth camera from a smartphone close to the body. This project was published in [UIST 2020](http://uist.acm.org/uist2020/).  
 More info about this work can be found in:  
-[[Project Video]](https://youtu.be/8N-UC3AqfAE) [[Paper (To Appear)]]()
+[[Project Video]](https://youtu.be/R56iuEuZyo0) [[Paper]](https://daehwa.github.io/paper/OddEyeCam_doi.pdf)
 <p align="center">
     <img src="images/thumnail.gif", width="480">
     <br>
@@ -17,6 +17,7 @@ More info about this work can be found in:
 
 ### Step 0: Camera Calibration
 OddEyeCam combines WFoV RGB camera and NFoV depth camera. For this fusion process, we need to calibrate the cameras. For more details, please check the [calibration](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/calibration) folder.
+Before you calibrate two cameras, be sure to fix two cameras to each other. We provide 3D printing models that we used for prototyping. Please see [3D_printing](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/3D_printing) folder.
 
 ### Step 1: Install Requirements
 - __Pose Estimation Module (OpenPose)__  
@@ -25,6 +26,8 @@ We used [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob
 Our system needs an Android device because OddEyeCam 1) receives accelerometer data from the device and 2) visualizes the result on the app. Please download OddEyeCam [Android application package (APK)](https://drive.google.com/file/d/1r3HOWgwSr-nKmP_GT4WFvUjOl7_6V8s4/view?usp=sharing). Or, you can also modify and build this app. For more details, please check the [android](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/android) folder.
 
 ### Step2: Run OddEyeCam on a Desktop
+All files you need to run OddEyeCam on the desktop are in the [core](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/core) and [util](https://github.com/KAIST-HCIL/OddEyeCam/tree/master/util) folders. [```oddeyecam_demo.py```](https://github.com/KAIST-HCIL/OddEyeCam/blob/master/oddeyecam_demo.py) uses these essential files to show demo.
+
 ```bash
 python oddeyecam_demo.py
 ```
