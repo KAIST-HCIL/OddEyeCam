@@ -6,7 +6,7 @@
 
 OddEyeCam is a practical inside-out mobile device tracking system to support body-centric peephole interaction. OddEyeCam tracks a user's body using a WFoV RGB camera and obtains precise depth information using an NFoV depth camera from a smartphone close to the body. This project was published in [UIST 2020](http://uist.acm.org/uist2020/).  
 More info about this work can be found in:  
-[[Project Video]](https://youtu.be/R56iuEuZyo0) [[Paper]](https://daehwa.github.io/paper/OddEyeCam_doi.pdf)
+[[Project Video]](https://youtu.be/R56iuEuZyo0) [[Paper]](https://daehwa.github.io/paper/OddEyeCam_paper.pdf)
 <p align="center">
     <img src="images/thumnail.gif", width="480">
     <br>
